@@ -130,7 +130,7 @@ Header: X-API-Key: <api-key>
 ### Getting the Agent's Card
 
 ```
-GET /v1/agents/{id}/card
+GET /v1/agents/{id}/payment-method
 Header: X-API-Key: <api-key>
 ```
 
@@ -181,7 +181,7 @@ These composed controls are applied to the Brex virtual card at creation time an
 Attach a spending limit to the agent from the dashboard at `https://app.flowgladpay.com` before creating a card.
 
 ### "Agent already has a card"
-Each agent can have only one active card. Check with `GET /v1/agents/{id}/card`.
+Each agent can have only one active card. Check with `GET /v1/agents/{id}/payment-method`.
 
 ### `fgp card` prints onboarding instructions instead of card details
 The `whoami` preflight check detected missing prerequisites. Follow the printed steps.
